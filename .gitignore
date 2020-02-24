@@ -1,0 +1,5 @@
+.ropeproject/
+html/
+__pycache__
+*.pyo
+*.pyc
