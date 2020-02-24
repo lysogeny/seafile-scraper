@@ -318,7 +318,7 @@ def main():
     parser.add_argument("--verbose", "-v", action="store_true", help="Increased verbosity")
     parser.add_argument("--chunk-size", "-c", type=int, default=5, nargs='?',
                         help="Chunk size (max parallel tasks)")
-    parser.add_argument("--force", "-f", action='store_true', nargs='?', help="Overwrite files when they exist")
+    parser.add_argument("--force", "-f", action='store_true', help="Overwrite files when they exist")
     args = parser.parse_args()
 
     scraper = Scraper(base=args.output[0],
